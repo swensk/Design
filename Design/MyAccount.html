@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8" />
+    <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
+
+    <script src="cordova.js"></script>
+    <script src="kendo/js/jquery.min.js"></script>
+    <script src="kendo/js/kendo.mobile.min.js"></script>
+
+    <script src="scripts/login.js"></script>
+    <script src="scripts/location.js"></script>
+    <script src="scripts/app.js"></script>
+    <style>
+        html .km-wp-light .km-content,
+        html .km-wp-light .km-button,
+        html .km-wp-light .km-navbar,
+        html .km-wp-light .km-detail,
+        html .km-wp-light *:not(.k-label) > input:not(.k-input),
+        html .km-wp-light .k-dropdown,
+        html .km-wp-light *:not(.k-label) > textarea,
+        html .km-wp-light *:not(.k-label) > select {
+            background: #fff;
+        }
+    </style>
+</head>
+<body>
+    <!--Home-->
+    <div id="tabstrip-home"
+        data-role="view"
+        data-title="Home">
+        
+
+        <div class="view-content">
+		<h3><span class="blue">My Account</span></h3>
+        
+        </div>
+        
+       
+            
+    <div>
+            <a data-role="button" href="#tabstrip-login" class="standard-button" data-transition="none">Wallet</a>
+			<a data-role="button" href="#tabstrip-login" class="standard-button" data-transition="none">Profile</a>
+			<a data-role="button" href="#tabstrip-login" class="standard-button" data-transition="none">Messages</a>
+ 			<a data-role="button" href="#tabstrip-login" class="standard-button" data-transition="none">Contacts</a>
+			<a data-role="button" href="#tabstrip-login" class="standard-button" data-transition="none">Ongoiong missions</a>
+			<a data-role="button" href="#tabstrip-login" class="standard-button" data-transition="none">Mission history</a>
+			<a data-role="button" href="#tabstrip-login" class="standard-button" data-transition="none">Settings</a>
+            
+    </div>
+        
+    </div>        <!--Header-->
+        <div data-role="header">
+            <div data-role="navbar">
+                <span data-role="view-title"></span>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <div data-role="footer">
+            <div data-role="tabstrip">
+                <a href="#tabstrip-home" data-icon="home" data-transition="fade">Home</a>
+                <a href="#tabstrip-myaccount" data-icon="bookmarks" data-transition="slide">MyAccount</a>
+                <a href="#tabstrip-information" data-icon="info" data-transition="slide:right">information</a>
+                
+            </div>
+        </div>
+    </body>
+</html>
