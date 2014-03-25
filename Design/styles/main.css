@@ -57,13 +57,21 @@ body, html {
 
 
 .standard-button {
-    margin: 5px 50px 20px 75px;
-    width: 50%;
-    font-size: .20px;
+    margin: 4% 8% 1% 8%;
+    height: 5%;
+    width: 75%;
+    font-size: .60px;
     background-color: f0c911;
     text-align: center;
 }
 
+.super-button {
+    text-align: center;
+    margin: 10% 4% 1% 13%;
+    height: 50px;
+    width: 200px;
+    font-size: .60px;
+}
 
 /* DEVICE SPECIFIC STYLES*/
 #skin-change {
