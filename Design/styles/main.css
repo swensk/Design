@@ -11,9 +11,12 @@ body, html {
     text-align: center;
 }
 
-.blue {
-    color: 408080;
+.view-content h2 {
+    color: black;
+    font-size: 1.1em;
+    text-align: center;
 }
+
 .view-content h3 {
     color: #408080;
     font-size: 1.1em;
@@ -23,6 +26,20 @@ body, html {
 .view-content p {
     color: #408080;
     font-size: 1em;
+}
+
+/* JOHANNES*/
+.blue {
+    color: 408080;
+}
+
+.textfield {
+    background-color: #FFFFFF;
+    text-align: center;
+    width: 320px;
+    height: 250px;
+    margin: 0px auto;
+    
 }
 
 /* IMAGE STYLES*/
@@ -108,20 +125,7 @@ body, html {
     color: #2e5968;
 }
 
-.km-ios .km-view .weather {
-    background: #5fb4ed; /* Old browsers */
-    background: -moz-linear-gradient(top, #5fb4ed 0%, #0076c5 74%); /* FF3.6+ */
-    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5fb4ed), color-stop(74%,#0076c5)); /* Chrome,Safari4+ */
-    background: -webkit-linear-gradient(top, #5fb4ed 0%,#0076c5 74%); /* Chrome10+,Safari5.1+ */
-    background: -o-linear-gradient(top, #5fb4ed 0%,#0076c5 74%); /* Opera 11.10+ */
-    background: -ms-linear-gradient(top, #5fb4ed 0%,#0076c5 74%); /* IE10+ */
-    background: linear-gradient(to bottom, #5fb4ed 0%,#0076c5 74%); /* W3C */
-}
-.km-ios7 .km-view .weather,
-.km-wp .km-view .weather,
-.km-flat .km-view .weather {
-    background: #b0b0b0;
-}
+
 
 .km-flat .km-list > li {
     box-shadow: none;
@@ -173,33 +177,4 @@ body, html {
         background-size: 100%;
     }
 
-    #map-search {
-        background-image: url(../styles/images/search2x.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-
-    #map-search:active {
-        background-image: url(../styles/images/search_active2x.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-
-    #map-navigate-home {
-        background-image: url(../styles/images/location2x.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-
-    #map-navigate-home:active {
-        background-image: url(../styles/images/location_active2x.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
-
-    .weather-icon {
-        background-image: url(../styles/images/sprite-weather2x.png);
-        background-repeat: no-repeat;
-        background-size: 100%;
-    }
 }

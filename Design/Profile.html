@@ -28,17 +28,34 @@
     </style>
 </head>
 <body>
-    <!--Home-->
+   				 <!--Home-->
     <div id="tabstrip-home"
+         style="background-color:white"
         data-role="view"
         data-title="Home">
         
 
         <div class="view-content">
 		<h3><span class="blue">Profile</span></h3>
+
         
-        </div>
+                <!--listview-->
+    <div id="enterStatus" class="textview" data-role="listview" data-style="inset">
+
+        <h2>Anna(5227)</h2>
+		<br>
+        <h3>Presentation</h3>
         
+
+        <div class="user-share">
+            <textarea id="newStatus" style="position:relative;top:70%;right:8px;color:black;background-color:white;width:280px;height:120px;margin:0px auto;" placeholder="Write something about yourself here..."></textarea>
+    	</div>    
+    </div>
+	</div>
+
+    
+        
+   
         
     </div>        <!--Header-->
         <div data-role="header">
@@ -47,7 +64,7 @@
             </div>
         </div>
 
-        <!--Footer-->
+      			  <!--Footer-->
         <div data-role="footer">
             <div data-role="tabstrip">
                 <a href="#tabstrip-home" data-icon="home" data-transition="fade">Home</a>
