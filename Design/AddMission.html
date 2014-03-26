@@ -29,21 +29,22 @@
 </head>
 <body>
     <!--Home-->
-    <div id="tabstrip-home"
-        data-role="view"
-        data-title="Home">
-        
-
-        <div class="view-content">
+   <div> 
+	
+        <div class="view-content"> </div>
+		
+        <data-title="Home">
+		<div class="view-content">
 		<h3><span class="blue">Add Missions</span></h3>
-        
-        </div>
-        
-
-
-        
-        
-        <ul data-role="listview" data-style="inset">
+		</div>
+		<ul data-role="listview" data-style="inset">
+            
+            <li>
+                <label>Date and Time
+                    
+                    <input type="datetime-local" value="" />
+                </label>
+            </li>
             <li>
                 <a href="#Headline">Headline</a>
             </li>
@@ -63,6 +64,7 @@
                 <a href="#Expenses">Expenses</a>
             </li>
         </ul>
+        <div data-role="footer"></div>
     </div>        <!--Header-->
         <div data-role="header">
             <div data-role="navbar">
@@ -79,11 +81,33 @@
                 
             </div>
         </div>
+    
+    <!--Headline-->
         <div id="Headline" data-role="view"></div>
-    <div id="Description" data-role="view"></div>
+    
+    <!--Description-->
+    <div id="Description" data-role="view">
+        
+    	 <div class="user-share">
+            <textarea id="newStatus" class="textarea_1" placeholder="Write something about yourself here..."></textarea>
+         </div> 
+         <div class="user-share">
+            <textarea id="newStatus" class="textarea_2" placeholder="Write something about yourself here..."></textarea>
+         </div> 
+    
+    </div>
+    
+    <!--Location-->
     <div id="Location" data-role="view"></div>
+    
+    <!--Timeframe-->
     <div id="Timeframe" data-role="view"></div>
+    
+    <!--Reward-->
     <div id="Reward" data-role="view"></div>
+    
+    <!--Expenses-->
     <div id="Expenses" data-role="view"></div>
+    
 </body>
 </html>

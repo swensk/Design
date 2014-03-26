@@ -38,8 +38,32 @@ body, html {
     text-align: center;
     width: 320px;
     height: 250px;
-    margin: 0px auto;
-    
+    margin: 0px auto;   
+}
+
+
+/* Connys masterdata */
+
+
+.textarea_1 {
+    display:block;
+    position:relative;
+    margin:auto;
+    margin-top: 3em;
+	color:black;
+	background-color:white;
+	width:280px;
+	height:2em;
+}
+
+.textarea_2 {
+    display:block;
+    position:relative;
+    margin:auto;
+    margin-top: 3em;
+	background-color:white;
+	width:280px;
+	height:5em;
 }
 
 /* IMAGE STYLES*/
@@ -72,10 +96,22 @@ body, html {
     -webkit-appearance: none;
 }
 
-
 .standard-button {
-    margin: 4% 8% 1% 8%;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
     height: 5%;
+    width: 75%;
+    font-size: .60px;
+    background-color: f0c911;
+    text-align: center;
+}
+
+.button_1 {
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    height: 20%;
     width: 75%;
     font-size: .60px;
     background-color: f0c911;
