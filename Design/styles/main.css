@@ -34,11 +34,14 @@ body, html {
 }
 
 .textfield {
-    background-color: #FFFFFF;
-    text-align: center;
-    width: 320px;
-    height: 250px;
-    margin: 0px auto;
+    margin:auto;
+    margin-top:1em;
+    position:relative;
+    color:black;
+    background-color:white;
+    width:90%;
+	height:70%;
+    border: 10px
     
 }
 

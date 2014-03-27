@@ -28,17 +28,46 @@
     </style>
 </head>
 <body>
-    <!--Home-->
-    <div id="tabstrip-home"
+    <!--Withdrawal-->
+    <div id="tabstrip-withdrawal"
         data-role="view"
         data-title="Home">
         
 
         <div class="view-content">
-		<h3><span class="blue">Wallet</span></h3>
-        
+		<h3><span class="blue">Withdrawal</span></h3>
         </div>
         
+            <!--Deposit-->
+    <div id="tabstrip-deposit"
+        data-role="view"
+        data-title="Information"
+
+        <div class="view-content">
+            <h3>Deposit</h3>
+    </div>
+        
+        
+        
+        
+        <ul data-role="listview" data-style="inset">
+            <li>Balance</li>
+        </ul>
+        <ul data-role="listview" data-style="inset">
+            <li>Points</li>
+        </ul>
+        <ul data-role="listview" data-style="inset">
+            
+            <li>
+                <a href="#tabstrip-deposit" data-transition="slide:right">Deposit</a>
+            </li>
+        </ul>
+        <ul data-role="listview" data-style="inset">
+            
+            <li>
+                <a href="#tabstrip-withdrawal" data-transition="slide:right">Withdrawal</a>
+            </li>
+        </ul>
         
     </div>        <!--Header-->
         <div data-role="header">
