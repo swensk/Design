@@ -42,6 +42,31 @@ body, html {
     
 }
 
+
+/* Conny */
+
+.textarea1 {
+    display:block;
+    margin:auto;
+    margin-top:1em;
+    position:relative;
+    color:black;
+    background-color:white;
+    width:90%;
+    height:5%;
+}
+
+.textarea2 {
+    display:block;
+    margin:auto;
+    margin-top:1em;
+    position:relative;
+    color:black;
+    background-color:white;
+    width:90%;
+	height:70%;
+}
+
 /* IMAGE STYLES*/
 .img {
     background-image: url(../styles/images/appbuilder.png);

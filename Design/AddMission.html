@@ -31,52 +31,34 @@
     <!--Home-->
     <div id="tabstrip-home"
         data-role="view"
-        data-title="Home">
-        
+        data-title="Add Mission">
 
         <div class="view-content">
-		<h3><span class="blue">Add Missions</span></h3>
-        
         </div>
-        
 
-
-        
-        
         <ul data-role="listview" data-style="inset">
-            
             <li>
-                <label>Label
-                    <input type="datetime-local" value="" />
-                </label>
-            </li>
-            <li>
-                <a href="#Headline">Headline</a>
-            </li>
-            <li>
-                <a href="#Description">Description</a>
+                <a href="#Information" data-transition="slide:left">Information</a>
             </li>
              <li>
-                <a href="#Location">Location</a>
+                <a href="#Location" data-transition="slide:left">Location</a>
             </li>
             <li>
-                <a href="#Timeframe">Timeframe</a>
+                <a href="#Timeframe" data-transition="slide:left">Timeframe</a>
             </li>
              <li>
-                <a href="#Reward">Reward</a>
-            </li>
-            <li>
-                <a href="#Expenses">Expenses</a>
+                <a href="#RewardandExpenses" data-transition="slide:left">Reward and Expenses</a>
             </li>
         </ul>
-    </div>        <!--Header-->
+    </div>        
+    <!--Header-->
         <div data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
             </div>
         </div>
 
-        <!--Footer-->
+    <!--Footer-->
         <div data-role="footer">
             <div data-role="tabstrip">
                 <a href="#tabstrip-home" data-icon="home" data-transition="fade">Home</a>
@@ -85,13 +67,24 @@
                 
             </div>
         </div>
-        <div id="Headline" data-role="view">
-            <ul data-role="listview" data-style="inset"></ul>
-        </div>
-    <div id="Description" data-role="view"></div>
+    
+    <!-- Information -->
+    <div id="Information" data-role="view">
+    	<div class="user-share">
+            <textarea id="newStatus" class="textarea1" placeholder="Type a headline..."></textarea>
+    	</div>
+        <div class="user-share">
+            <textarea id="newStatus" class="textarea2" placeholder="Describe the mission here..       Remeber to type whatever tools might be necessary for the agent to complete the mission!"></textarea>
+    	</div>    
+    </div>
+    
+    <!-- Location -->
     <div id="Location" data-role="view"></div>
+    <!-- Timeframe -->
     <div id="Timeframe" data-role="view"></div>
-    <div id="Reward" data-role="view"></div>
-    <div id="Expenses" data-role="view"></div>
+    <!-- Reward & Expenses -->
+    <div id="RewardandExpenses" data-role="view"></div>
+    
+    <div id="Location_choice" data-role="view"></div>
 </body>
 </html>
