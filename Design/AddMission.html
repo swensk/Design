@@ -36,7 +36,7 @@
         <div class="view-content">
         </div>
 
-        <ul data-role="listview" data-style="inset">
+        <ul data-role="listview" data-style="inset" data-auto-bind="false">
             <li>
                 <a href="#Information" data-transition="slide:left">Information</a>
             </li>
@@ -64,7 +64,6 @@
                 <a href="#tabstrip-home" data-icon="home" data-transition="fade">Home</a>
                 <a href="#tabstrip-myaccount" data-icon="bookmarks" data-transition="slide">MyAccount</a>
                 <a href="#tabstrip-information" data-icon="info" data-transition="slide:right">information</a>
-                
             </div>
         </div>
     
@@ -78,13 +77,32 @@
     	</div>    
     </div>
     
-    <!-- Location -->
-    <div id="Location" data-role="view"></div>
+   <!-- Location -->
+    <div id="Location" data-role="view">
+        <ul data-role="listview" data-style="inset">
+            <li data-icon="featured">Location</li>
+            <li>
+                <a>Fixed location</a>
+            </li>
+            <li>
+                <a>Start and Stop</a>
+            </li>
+            <li>
+                <a>Anywhere</a>
+            </li>
+        </ul>
+    </div>
+    
+    <!--FixedLocation -->
+        <div id="FixedLocation" data-role="view">
+        <ul data-role="listview" data-style="inset">
+            <li data-icon="featured">Location</li>
+        </ul>
+    </div>
     <!-- Timeframe -->
     <div id="Timeframe" data-role="view"></div>
     <!-- Reward & Expenses -->
     <div id="RewardandExpenses" data-role="view"></div>
     
-    <div id="Location_choice" data-role="view"></div>
 </body>
 </html>
