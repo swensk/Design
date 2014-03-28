@@ -58,51 +58,85 @@
             </div>
         </div>
 
-    <!--Footer-->
-        <div data-role="footer">
-            <div data-role="tabstrip">
-                <a href="#tabstrip-home" data-icon="home" data-transition="fade">Home</a>
-                <a href="#tabstrip-myaccount" data-icon="bookmarks" data-transition="slide">MyAccount</a>
-                <a href="#tabstrip-information" data-icon="info" data-transition="slide:right">information</a>
-            </div>
-        </div>
+
     
     <!-- Information -->
-    <div id="Information" data-role="view">
+    <div id="Information" data-role="view" data-title="Information">
     	<div class="user-share">
             <textarea id="newStatus" class="textarea1" placeholder="Type a headline..."></textarea>
     	</div>
         <div class="user-share">
-            <textarea id="newStatus" class="textarea2" placeholder="Describe the mission here..       Remeber to type whatever tools might be necessary for the agent to complete the mission!"></textarea>
+            <textarea id="newStatus" class="textarea2" placeholder="Describe the mission here..       Remeber to type whatever equipment might be necessary for the agent to complete the mission!"></textarea>
     	</div>    
     </div>
     
    <!-- Location -->
-    <div id="Location" data-role="view">
+    <div id="Location" data-role="view" data-title="Location">
+        <div id="PopOver1" data-role="popover" data-width="300" data-height="500">
+            <div data-role="view"></div>
+        </div>
         <ul data-role="listview" data-style="inset">
-            <li data-icon="featured">Location</li>
+            
             <li>
-                <a>Fixed location</a>
+                <a href="#FixedLocation">Fixed location</a>
             </li>
             <li>
-                <a>Start and Stop</a>
+                <a href="#StartandStop">Start and Stop</a>
             </li>
             <li>
-                <a>Anywhere</a>
+                <a href="#Anywhere">Anywhere</a>
             </li>
         </ul>
     </div>
     
     <!--FixedLocation -->
-        <div id="FixedLocation" data-role="view">
+        <div id="FixedLocation" data-role="view" data-title="Fixed Location">
         <ul data-role="listview" data-style="inset">
-            <li data-icon="featured">Location</li>
+            
+            <li>
+                
+            </li>
+            <li data-icon="compose">Other, type position                                    </li>
+        </ul>
+            <div id="PopOver2" data-role="popover" data-margin="auto" data-width="300" data-height="300">
+            <div data-role="view"></div>
+        </div>
+        
+            
+        </div>
+    <!-- Start and Stop -->
+    <div id="StartandStop" data-role="view" data-title="Start & Stop">
+        <ul data-role="listview" data-style="inset">
+            
+        </ul>
+    </div>
+    <!-- Anywhere -->
+    <div id="Anywhere" data-role="view" data-title="Anywhere">
+        <ul data-role="listview" data-style="inset">
+            
         </ul>
     </div>
     <!-- Timeframe -->
-    <div id="Timeframe" data-role="view"></div>
+    <div id="Timeframe" data-role="view" data-title="Timeframe">
+        <ul data-role="listview" data-style="inset">
+            
+        </ul>
+    </div>
     <!-- Reward & Expenses -->
-    <div id="RewardandExpenses" data-role="view"></div>
+    <div id="RewardandExpenses" data-role="view" data-title="Reward & Expenses">
+         <ul data-role="listview" data-style="inset">
+            
+        </ul>
+    </div>
+    <!--Footer-->
+    <div data-role="footer">
+    	<div data-role="tabstrip">
+    		<a href="#tabstrip-home" data-icon="home" data-transition="fade">Home</a>
+                <a href="#tabstrip-myaccount" data-icon="bookmarks" data-transition="slide">MyAccount</a>
+                <a href="#tabstrip-information" data-icon="info" data-transition="slide:right">information</a>
+        </div>
+    </div>
+    
     
 </body>
 </html>
