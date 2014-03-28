@@ -102,8 +102,9 @@ body, html {
 
 
 .standard-button {
-    margin: 4% 8% 1% 8%;
-    height: 5%;
+    margin: auto;
+    display:block;
+    height: 7%;
     width: 75%;
     font-size: .60px;
     background-color: f0c911;
