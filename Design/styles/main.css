@@ -112,10 +112,12 @@ body, html {
 
 .super-button {
     display:block;
+    border:.5em solid green;
     margin: auto;
     margin-top:3em;
     text-align: center;
-    background-color: #408080;
+    padding-top: 2em;
+    color:white;
     height: 10%;
     width: 50%;
     font-size:1em;
