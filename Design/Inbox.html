@@ -29,11 +29,26 @@
 </head>
 <body>
     <!--Home-->
-    <div id="tabstrip-home"
-        data-role="view"
-        data-title="Inbox"> 
+    <div data-role="view"
+         data-title="Inbox"> 
         
-    </div>        <!--Header-->
+        <br>
+        <ul data-role="buttongroup" style="height:3.5em;width:20%;">
+            <li href="#AllMessages">All Messages</li>
+            <li>Button</li>
+            <li>Button</li>
+        </ul>
+        
+        
+				<!--AllMessages-->
+        </div>
+        <div id="AllMessages" data-role="view" data-title="AllMessages">
+            <h3>
+                All
+            </h3>
+    	</div>        
+        
+    </div>      <!--Header-->
         <div data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
@@ -48,6 +63,6 @@
                 <a href="#tabstrip-information" data-icon="info" data-transition="slide:right">information</a>
                 
             </div>
-        </div>
-    </body>
+
+</body>
 </html>
