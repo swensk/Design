@@ -6,7 +6,7 @@ body, html {
 
 /* COMMON STYLES*/
 .view-content h1 {
-    color: #408080;
+    color:black;
     font-size: 1.8em;
     text-align: center;
 }
@@ -18,13 +18,13 @@ body, html {
 }
 
 .view-content h3 {
-    color: #408080;
+    color:black;
     font-size: 1.1em;
     text-align: center;	
 }
 
 .view-content p {
-    color: #408080;
+    color: black;
     font-size: 1em;
 }
 
@@ -45,6 +45,9 @@ body, html {
     
 }
 
+.list {
+    color:rgb(64,128,128);
+}
 
 /* Conny */
 
@@ -123,6 +126,16 @@ body, html {
     font-size:1em;
 }
 
+.buttonX {
+    margin: auto;
+    display:block;
+    height: 30%;
+    width: 50%;
+    font-size: .60px;
+    background-color: f0c911;
+    text-align: center;
+    font-size:1em;
+}
 .img-button {
     margin: auto;
     display:block;
@@ -179,12 +192,6 @@ body, html {
 .km-android .view-content h3 {
     color: #2e5968;
 }
-
-.km-android .weather-info.temperature.low {
-    color: #2e5968;
-}
-
-
 
 .km-flat .km-list > li {
     box-shadow: none;
