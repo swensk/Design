@@ -38,16 +38,16 @@
 
         <ul data-role="listview" data-style="inset" data-auto-bind="false">
             <li>
-                <a href="#Information" data-transition="slide:left">Information</a>
+                <a href="#Information" data-transition="slide:left" style="background-color:#408080;color:white">Information</a>
             </li>
              <li>
-                <a href="#Location" data-transition="slide:left">Location</a>
+                <a href="#Location" data-transition="slide:left" style="background-color:#408080;color:white">Location</a>
             </li>
             <li>
-                <a href="#Timeframe" data-transition="slide:left">Timeframe</a>
+                <a href="#Timeframe" data-transition="slide:left" style="background-color:#408080;color:white">Timeframe</a>
             </li>
              <li>
-                <a href="#RewardandExpenses" data-transition="slide:left">Reward and Expenses</a>
+                 <a href="#RewardandExpenses" data-transition="slide:left" style="background-color:#408080;color:white">Reward and Expenses</a>
             </li>
         </ul>
     </div>        
@@ -68,6 +68,7 @@
         <div class="user-share">
             <textarea id="newStatus" class="textarea2" placeholder="Describe the mission here..       Remeber to type whatever equipment might be necessary for the agent to complete the mission!"></textarea>
     	</div>    
+        <a data-role="button" data-icon="action" href="#Location" style="float:right;color:white;background-color:#408080;margin-right:1em;">Next</a>
     </div>
     
    <!-- Location -->
@@ -78,31 +79,28 @@
         <ul data-role="listview" data-style="inset">
             
             <li>
-                <a href="#FixedLocation">Fixed location</a>
+                <a href="#FixedLocation" style="background-color:#408080;color:white">Fixed location</a>
             </li>
             <li>
-                <a href="#StartandStop">Start and Stop</a>
+                <a href="#StartandStop" style="background-color:#408080;color:white">Start and Stop</a>
             </li>
             <li>
-                <a href="#Anywhere">Anywhere</a>
+                <a href="#Anywhere" style="background-color:#408080;color:white">Anywhere</a>
             </li>
         </ul>
     </div>
     
     <!--FixedLocation -->
         <div id="FixedLocation" data-role="view" data-title="Fixed Location">
-        <ul data-role="listview" data-style="inset">
-            
-            <li>
-                
-            </li>
-            <li data-icon="compose">Other, type position                                    </li>
-        </ul>
-            <div id="PopOver2" data-role="popover" data-margin="auto" data-width="300" data-height="300">
-            <div data-role="view"></div>
-        </div>
         
-            
+            <ul data-role="listview" data-style="inset">
+                
+                
+                <li style="background-color:#408080;color:white">
+                    <input type="checkbox" data-role="switch">
+                    <label>Use current GPS position</label>
+                </li>
+            </ul>
         </div>
     <!-- Start and Stop -->
     <div id="StartandStop" data-role="view" data-title="Start & Stop">
@@ -130,7 +128,7 @@
     </div>
     <!--Footer-->
     <div data-role="footer">
-    	<div data-role="tabstrip">
+        <div data-role="tabstrip">
     		<a href="#tabstrip-home" data-icon="home" data-transition="fade">Home</a>
                 <a href="#tabstrip-myaccount" data-icon="bookmarks" data-transition="slide">MyAccount</a>
                 <a href="#tabstrip-information" data-icon="info" data-transition="slide:right">information</a>
