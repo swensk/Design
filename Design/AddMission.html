@@ -56,8 +56,7 @@
             <div data-role="navbar">
                 <span data-role="view-title"></span>
             </div>
-        </div>
-
+    </div>
 
     
     <!-- Information -->
@@ -68,7 +67,7 @@
         <div class="user-share">
             <textarea id="MissionDescription" class="textarea2" placeholder="Describe the mission here..				Remeber to type whatever equipment might be necessary for the agent to complete the mission!"></textarea>
     	</div>    
-        <a data-role="button" data-icon="action" href="#Location" style="float:right;color:white;background-color:#408080;margin-right:1em;"><span style="color:white">Next</span></a>
+        <a data-role="button" data-icon="action" href="#Location" style="float:right;color:white;background-color:#408080;margin-right:1em;margin-top:.5em"><span style="color:white">Next</span></a>
     </div>
     
    <!-- Location -->
@@ -85,7 +84,7 @@
                 <a href="#StartandStop" style="color:rgb(64,128,128)">Start and Stop</a>
             </li>
             <li>
-                <a href="#Anywhere" style="color:rgb(64,128,128)">Anywhere</a>
+                <a href="#Timeframe" style="color:rgb(64,128,128)">Anywhere</a>
             </li>
         </ul>
     </div>
@@ -94,24 +93,53 @@
         <div id="FixedLocation" data-role="view" data-title="Fixed Location">
         
             <ul data-role="listview" data-style="inset">
-                <li style="background-color:#408080;color:white">
+                <li style="color:rgb(64,128,128)">
                     <input type="checkbox" data-role="switch">
                     <label>Use current GPS position</label>
                 </li>
+                <br/>
+                <li style="color:rgb(64,128,128); border:1px solid lightgrey;text-align:center">
+                    <label>Other, type location below</label>
+                </li>
+                <li class="user-share">
+                    <textarea id="QuestHeadline" class="textarea1" style="text-align:center;width:100%" placeholder="Location..."></textarea>
+    			</li>
             </ul>
+            <!-- Att lägga till i cancelknappen: data-click="closeModalViewLogin" -->
+            <a data-role="button" style="float:left; color:white; background-color:rgb(209,21,52); margin-left:1em;"><span style="color:white">Cancel</span></a>
+            <a data-role="button" href="#Timeframe" style="float:right;color:white;background-color:#408080;margin-right:1em;margin-top:1em;width:5em"><span style="color:white">Next</span></a>
+
         </div>
     <!-- Start and Stop -->
     <div id="StartandStop" data-role="view" data-title="Start & Stop">
         <ul data-role="listview" data-style="inset">
+            <a style="display:block;margin-top:1em;margin-bottom:1em;text-align:center">Start
+            </a>
+            <li style="color:rgb(64,128,128);border:1px solid rgb(228,231,237)">
+                    <input type="checkbox" data-role="switch">
+                    <label>Use current GPS position</label>
+            </li>
+            <li class="user-share">
+            	<textarea id="QuestHeadline" class="textarea1" style="text-align:center;width:100%" placeholder="Other location, type here"></textarea>
+    		</li>
             
+            <a style="display:block;margin-top:2em;margin-bottom:1em;text-align:center">Stop
+            </a>
+            <li style="color:rgb(64,128,128);border:1px solid rgb(228,231,237)">
+                    <input type="checkbox" data-role="switch">
+                    <label>Use current GPS position</label>
+            </li>
+            <li class="user-share">
+            	<textarea id="QuestHeadline" class="textarea1" style="text-align:center;width:100%" placeholder="Other location, type here"></textarea>
+    		</li>
+		
+            <!-- Att lägga till i cancelknappen:	data-click="closeModalViewLogin" -->
+            <a data-role="button" data-icon="trash" style="float:left;color:white;background-color:rgb(209,21,52);margin-left:1em;"><span style="color:white">Cancel</span></a>
+            <a data-role="button" data-icon="action" href="#Timeframe" style="float:right;color:white;background-color:#408080;margin-right:1em;width:5em"><span style="color:white">Next</span></a>
+
         </ul>
     </div>
-    <!-- Anywhere -->
-    <div id="Anywhere" data-role="view" data-title="Anywhere">
-        <ul data-role="listview" data-style="inset">
-            
-        </ul>
-    </div>
+   
     <!-- Timeframe -->
     <div id="Timeframe" data-role="view" data-title="Timeframe">
         <ul data-role="listview" data-style="inset">
