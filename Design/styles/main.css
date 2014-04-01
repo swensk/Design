@@ -54,13 +54,14 @@ body, html {
 .textarea1 {
     display:block;
     margin:auto;
-    margin-top:1em;
+    margin-top:.2em;
     position:relative;
     color:black;
     background-color:white;
     width:90%;
     height:5%;
     text-align:center;
+    border:1px solid rgb(228,231,237);
 }
 
 .textarea2 {

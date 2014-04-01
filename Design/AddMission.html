@@ -72,11 +72,8 @@
     
    <!-- Location -->
     <div id="Location" data-role="view" data-title="Location">
-        <div id="PopOver1" data-role="popover" data-width="300" data-height="500">
-            <div data-role="view"></div>
-        </div>
+  
         <ul data-role="listview" data-style="inset">
-            
             <li>
                 <a href="#FixedLocation" style="color:rgb(64,128,128)">Fixed location</a>
             </li>
@@ -106,8 +103,8 @@
     			</li>
             </ul>
             <!-- Att lägga till i cancelknappen: data-click="closeModalViewLogin" -->
-            <a data-role="button" style="float:left; color:white; background-color:rgb(209,21,52); margin-left:1em;"><span style="color:white">Cancel</span></a>
-            <a data-role="button" href="#Timeframe" style="float:right;color:white;background-color:#408080;margin-right:1em;margin-top:1em;width:5em"><span style="color:white">Next</span></a>
+            <a data-role="button" data-icon="trash" style="float:left; color:white; background-color:rgb(209,21,52); margin-left:1em;"><span style="color:white">Cancel</span></a>
+        <a data-role="button" data-icon="action" href="#Timeframe" style="float:right;color:white;background-color:#408080;margin-right:1em;margin-top:1em"><span style="color:white">Next</span></a>
 
         </div>
     <!-- Start and Stop -->
@@ -132,19 +129,33 @@
             <li class="user-share">
             	<textarea id="QuestHeadline" class="textarea1" style="text-align:center;width:100%" placeholder="Other location, type here"></textarea>
     		</li>
-		
+        </ul>
             <!-- Att lägga till i cancelknappen:	data-click="closeModalViewLogin" -->
             <a data-role="button" data-icon="trash" style="float:left;color:white;background-color:rgb(209,21,52);margin-left:1em;"><span style="color:white">Cancel</span></a>
-            <a data-role="button" data-icon="action" href="#Timeframe" style="float:right;color:white;background-color:#408080;margin-right:1em;width:5em"><span style="color:white">Next</span></a>
+        <a data-role="button" data-icon="action" href="#Timeframe" style="float:right;color:white;background-color:#408080;margin-right:1em;margin-top:1em;width:5em"><span style="color:white">Next</span></a>
 
-        </ul>
+        
     </div>
    
     <!-- Timeframe -->
     <div id="Timeframe" data-role="view" data-title="Timeframe">
-        <ul data-role="listview" data-style="inset">
-            
+		<ul data-role="listview" data-style="inset">
+            <a style="display:block;margin:auto;text-align:center;width:100%">When do you want the mission to be started?</a>
+            <a style="display:block;margin:auto;text-align:center;width:100%">Choose one of the options below</a>
+
+            <li style="margin-top:2em">
+                <a href="#" style="color:rgb(64,128,128)">Fixed Starttime</a>
+            </li>
+            <li>
+                <a href="#" style="color:rgb(64,128,128)">Between two times</a>
+            </li>
+            <li>
+                <a href="#RewardandExpenses" style="color:rgb(64,128,128)">Whenever..</a>
+            </li>
         </ul>
+
+        <a data-role="button" data-icon="trash" style="float:left;color:white;background-color:rgb(209,21,52);margin-left:1em;"><span style="color:white">Cancel</span></a>
+
     </div>
     <!-- Reward & Expenses -->
     <div id="RewardandExpenses" data-role="view" data-title="Reward & Expenses">
