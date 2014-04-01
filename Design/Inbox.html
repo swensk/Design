@@ -28,28 +28,34 @@
     </style>
 </head>
 <body>
-    <!--Home-->
-    <div data-role="view"
-         data-title="Inbox"> 
-
-			<br>
-        
+    
+        <div id="Inbox" data-role="view">
         <ul data-role="buttongroup">
-            <li href="#AsAgent">Only as agent</li>
-            <li>Only as client</li>
+            <li href="#AsAgent" data-role="button" data-icon="info">AsAgent</li>
+            <li href="AsClient" data-role="button" data-icon="add">AsClient</li>
         </ul>
-        
     </div>
-       			 <!--AsAgent-->
-        <div id="AsAgent" data-role="view" data-title="OnlyAsAgent">
-       		<input type="checkbox" data-role="switch" data-off-label="On" data-on-label="Off">
-            <h3>
-                sad
-            </h3>
-        </div>
-   
-        
-      
+    
+    <div id="AsAgent" data-role="view">
+        <ul data-role="buttongroup">
+            <li href="#AsAgent" data-role="button" data-icon="info">AsAgent</li>
+            <li href="#AsClient" data-role="button" data-icon="add">AsClient</li>
+        </ul>
+        <p>
+            Messages from clients I suppose...
+        </p>
+    </div>
+    
+    <div id="AsClient" data-role="view">
+        <ul data-role="buttongroup">
+            <li href="#AsAgent" data-role="button" data-icon="info">AsAgent</li>
+            <li href="#AsClient" data-role="button" data-icon="add">AsClient</li>
+        </ul>
+        <p>
+            Messages from agents I suppose...
+        </p>
+    </div>
+
         
 				<!--Header-->
         <div data-role="header">
@@ -68,5 +74,6 @@
 		</div>      
         
 	
+
 </body>
 </html>
