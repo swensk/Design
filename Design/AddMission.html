@@ -137,17 +137,17 @@
         
     </div>
    
-    <!-- Timeframe -->
+    <!-- Timeframe Start-->
     <div id="Timeframe" data-role="view" data-title="Timeframe">
 		<ul data-role="listview" data-style="inset">
             <a style="display:block;margin:auto;text-align:center;width:100%">When do you want the mission to be started?</a>
             <a style="display:block;margin:auto;text-align:center;width:100%">Choose one of the options below</a>
 
             <li style="margin-top:2em">
-                <a href="#" style="color:rgb(64,128,128)">Fixed Starttime</a>
+                <a href="#FixedStarttime" style="color:rgb(64,128,128)">Fixed Starttime</a>
             </li>
             <li>
-                <a href="#" style="color:rgb(64,128,128)">Between two times</a>
+                <a href="#StartInterval" style="color:rgb(64,128,128)">Start Interval</a>
             </li>
             <li>
                 <a href="#RewardandExpenses" style="color:rgb(64,128,128)">Whenever..</a>
@@ -157,12 +157,169 @@
         <a data-role="button" data-icon="trash" style="float:left;color:white;background-color:rgb(209,21,52);margin-left:1em;"><span style="color:white">Cancel</span></a>
 
     </div>
+    
+    <!-- Fixed Starttime -->
+    <div id="FixedStarttime" data-role="view" data-title="Fixed Starttime">
+
+        	<a style="display:block;margin:auto;text-align:center;width:100%">Choose when you want the mission to be started</a>
+        	
+    	<ul data-role="listview" data-style="inset">
+        	<li>
+        	    <label>Date
+                    <input type="date" value="" />
+                </label>
+            </li>
+                <br/>
+            <li> 	
+            	<label>Time
+                    <input type="time" value="" />
+                </label>
+            </li>
+        </ul>
+                <a data-role="button" data-icon="trash" style="float:left;color:white;background-color:rgb(209,21,52);margin-left:1em;"><span style="color:white">Cancel</span></a>
+        <a data-role="button" data-icon="action" href="#RewardandExpenses" style="float:right;color:white;background-color:#408080;margin-right:1em;margin-top:1em;width:5em"><span style="color:white">Next</span></a>
+
+    </div>
+    <!-- Start Between two times -->
+    <div id="StartInterval" data-role="view" data-title="Start Interval">
+
+        <a style="display:block;margin:auto;text-align:center;width:100%">Earliest Starttime</a>
+
+    	<ul data-role="listview" data-style="inset">
+        	<li>
+        	    <label>Date
+                    <input type="date" value="" />
+                </label>
+            </li>
+                <br/>
+            <li> 	
+            	<label>Time
+                    <input type="time" value="" />
+                </label>
+            </li>
+        </ul>
+        
+       	<a style="display:block;margin:auto;text-align:center;width:100%">Latest Starttime</a>
+
+        <ul data-role="listview" data-style="inset">
+        	<li>
+        	    <label>Date
+                    <input type="date" value="" />
+                </label>
+            </li>
+                <br/>
+            <li> 	
+            	<label>Time
+                    <input type="time" value="" />
+                </label>
+            </li>
+        </ul>
+                    <a data-role="button" data-icon="trash" style="float:left;color:white;background-color:rgb(209,21,52);margin-left:1em;"><span style="color:white">Cancel</span></a>
+        <a data-role="button" data-icon="action" href="#RewardandExpenses" style="float:right;color:white;background-color:#408080;margin-right:1em;margin-top:1em;width:5em"><span style="color:white">Next</span></a>
+    </div>
+    
+    <!-- Timeframe Stop-->
+    <div id="Stoptime" data-role="view" data-title="Stoptime">
+		<ul data-role="listview" data-style="inset">
+            <a style="display:block;margin:auto;text-align:center;width:100%">When do you want the mission to be completed?</a>
+            <a style="display:block;margin:auto;text-align:center;width:100%">Choose one of the options below</a>
+
+            <li style="margin-top:2em">
+                <a href="#FixedStoptime" style="color:rgb(64,128,128)">Fixed Stoptime</a>
+            </li>
+            <li>
+                <a href="#StopInterval" style="color:rgb(64,128,128)">Stop Interval</a>
+            </li>
+            <li>
+                <a href="#RewardandExpenses" style="color:rgb(64,128,128)">Whenever..</a>
+            </li>
+        </ul>
+
+        <a data-role="button" data-icon="trash" style="float:left;color:white;background-color:rgb(209,21,52);margin-left:1em;"><span style="color:white">Cancel</span></a>
+
+    </div>
+
+    <!-- Fixed Stoptime -->
+    <div id="FixedStoptime" data-role="view" data-title="Fixed Stoptime">
+
+        	<a style="display:block;margin:auto;text-align:center;width:100%">Choose when you want the mission to be completed</a>
+        	
+    	<ul data-role="listview" data-style="inset">
+        	<li>
+        	    <label>Date
+                    <input type="date" value="" />
+                </label>
+            </li>
+                <br/>
+            <li> 	
+            	<label>Time
+                    <input type="time" value="" />
+                </label>
+            </li>
+        </ul>
+                <a data-role="button" data-icon="trash" style="float:left;color:white;background-color:rgb(209,21,52);margin-left:1em;"><span style="color:white">Cancel</span></a>
+        <a data-role="button" data-icon="action" href="#RewardandExpenses" style="float:right;color:white;background-color:#408080;margin-right:1em;margin-top:1em;width:5em"><span style="color:white">Next</span></a>
+
+    </div>
+    <!-- Stop Between two times -->
+    <div id="StopInterval" data-role="view" data-title="Stoptime Interval">
+
+        <a style="display:block;margin:auto;text-align:center;width:100%">Earliest completion</a>
+
+    	<ul data-role="listview" data-style="inset">
+        	<li>
+        	    <label>Date
+                    <input type="date" value="" />
+                </label>
+            </li>
+                <br/>
+            <li> 	
+            	<label>Time
+                    <input type="time" value="" />
+                </label>
+            </li>
+        </ul>
+        
+       	<a style="display:block;margin:auto;text-align:center;width:100%">Latest Completion</a>
+
+        <ul data-role="listview" data-style="inset">
+        	<li>
+        	    <label>Date
+                    <input type="date" value="" />
+                </label>
+            </li>
+                <br/>
+            <li> 	
+            	<label>Time
+                    <input type="time" value="" />
+                </label>
+            </li>
+        </ul>
+                    <a data-role="button" data-icon="trash" style="float:left;color:white;background-color:rgb(209,21,52);margin-left:1em;"><span style="color:white">Cancel</span></a>
+        <a data-role="button" data-icon="action" href="#RewardandExpenses" style="float:right;color:white;background-color:#408080;margin-right:1em;margin-top:1em;width:5em"><span style="color:white">Next</span></a>
+    </div>
+        
     <!-- Reward & Expenses -->
     <div id="RewardandExpenses" data-role="view" data-title="Reward & Expenses">
-         <ul data-role="listview" data-style="inset">
-            
+         
+          <ul data-role="listview" data-style="inset">
+            <li>
+                <label>Reward
+                    <input type="number" value="" />
+                </label>
+            </li>
+            <li>
+                <label>Expenses
+                    <input type="number" value="" />
+                </label>
+            </li>
         </ul>
+        
+        <a data-role="button" data-icon="trash" style="float:left;color:white;background-color:rgb(209,21,52);margin-left:1em;"><span style="color:white">Cancel</span></a>
+        <a data-role="button" data-icon="action" href="#RewardandExpenses" style="float:right;color:white;background-color:#408080;margin-right:1em;margin-top:1em;width:5em"><span style="color:white">Next</span></a>
+    
     </div>
+
     <!--Footer-->
     <div data-role="footer">
         <div data-role="tabstrip">

@@ -56,6 +56,9 @@
 .km-flat .km-view .km-content .km-list {
     background-color: rgb(255, 255, 255);color: rgb (64, 128, 128);
 }
+.km-flat .km-view .km-content .km-list .km-listview-label {
+    background-color:red;
+}
 
 /* Slut Conny */
 
