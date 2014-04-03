@@ -3,7 +3,6 @@
 <html>
 <head>
     <title></title>
-    <meta charset="utf-8" />
     <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
     <link href="styles/main.css" rel="stylesheet" />
 
@@ -28,46 +27,80 @@
     </style>
 </head>
 <body>
-    <!--Home-->
-    <div data-role="view"
-         data-title="Inbox"> 
-        
-        <br>
-        <ul data-role="buttongroup" style="height:3.5em;width:20%;">
-            <li href="#AllMessages">All Messages</li>
-            <li href="Home.html">As Agent</li>
-            <li>As Client</li>
+    
+    <div id="Inbox" data-role="view">
+        <ul data-role="buttongroup">
+            <li href="#AsAgent" data-role="button" data-icon="info">AsAgent</li>
+            <li href="AsClient" data-role="button" data-icon="add">AsClient</li>
         </ul>
-        </div>
-        
-				<!--AllMessages-->
-        <div id="AllMessages" data-role="view" data-title="AllMessages">
-    	    <ul data-role="listview" data-style="inset">
-                <h3>All</h3>
-             <li>ListItem</li>
-             <li>
-                 <label>Label
-                     <input type="tel" value="77" />
-                 </label>
-             </li>
-         </ul>
-        </div>        
-        
-				<!--Header-->
+   	</div>
+    
+    <div id="AsAgent" data-role="view">
+        <ul data-role="buttongroup">
+            <li href="#AsAgent" data-role="button" data-icon="info">AsAgent</li>
+            <li href="#AsClient" data-role="button" data-icon="add">AsClient</li>
+        </ul>
+            
+    <ul data-role="listview">
+        <li>
+            <h3 class="time">07:56</h3><h3>John Doe</h3>
+            <h2>Monday meeting</h2>
+            <p>Hi Tom, Since Monday I'll be out of office, I'm rescheduling the meeting for Tuesday.</p>
+        </li>
+        <li>
+            <h3 class="time">08:21</h3><h3>Joe Harper</h3>
+            <h2>I'm sorry, Tom</h2>
+            <p>Hi Tom, my aunt comes for a visit this Saturday, so I can't come back to St. Pete...</p>
+        </li>
+        <li>
+            <h3 class="time">08:33</h3><h3>Sarah Connor</h3>
+            <h2>Regarding org chart changes</h2>
+            <p>Tom, I checked the new org chart last night and I have some reservations about it...</p>
+        </li>
+        <li>
+            <h3 class="time">08:40</h3><h3>John Doe</h3>
+            <h2>Re: Regarding org chart changes</h2>
+            <p>Agree with Sarah...</p>
+        </li>
+        <li>
+            <h3 class="time">09:16</h3><h3>Jane Parker</h3>
+            <h2>Your Costume is ready</h2>
+            <p>Hi mr. Sawyer, I'm sorry for the delay, your Halloween costume is ready. The bears...</p>
+        </li>
+        <li>
+            <h3 class="time">11:03</h3><h3>Becky Thatcher</h3>
+            <h2>Out tonight?</h2>
+            <p>Honey, wanna go out tonight to grab some chicken? My weekly vouchers for cooking...</p>
+        </li>
+    </ul>      
+   </div>
+
+    <div id="AsClient" data-role="view">
+        <ul data-role="buttongroup">
+            <li href="#AsAgent" data-role="button" data-icon="info">AsAgent</li>
+            <li href="#AsClient" data-role="button" data-icon="add">AsClient</li>
+        </ul>
+        <p>
+            Messages from agents I suppose...
+        </p>
+    </div>
+
+			<!--Header-->
         <div data-role="header">
             <div data-role="navbar">
                 <span data-role="view-title"></span>
             </div>
         </div>
 
-        <!--Footer-->
+			<!--Footer-->
         <div data-role="footer">
             <div data-role="tabstrip">
                 <a href="#tabstrip-home" data-icon="home" data-transition="fade">Home</a>
                 <a href="#tabstrip-myaccount" data-icon="bookmarks" data-transition="slide">MyAccount</a>
-                <a href="#tabstrip-information" data-icon="info" data-transition="slide:right">information</a>        
+                <a href="#tabstrip-information" data-icon="info" data-transition="slide:right">information</a> 
             </div>
-		</div>            
-    
-</body>
+		</div>  
+
+        
+	</body>
 </html>
